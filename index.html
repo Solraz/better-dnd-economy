@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>D&D Better Economy</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="flex gap-6 bg-background text-white w-full min-h-screen">
+      <div
+        class="flex flex-col border border-white px-4 py-4 h-screen"
+        parameters
+      >
+        <div class="flex gap-3" presets>
+          <button load-preset="village">Village</button>
+          <button load-preset="town">Town</button>
+          <button load-preset="city">City</button>
+          <button load-preset="big_city">Big City</button>
+        </div>
+
+        <div class="flex flex-col gap-2 mt-4" knobs>
+          <div knob>
+            <span>Population</span>
+
+            <div>
+              <input type="text" name="population" value="10000" />
+              <input
+                type="range"
+                min="0"
+                value="1000"
+                max="125000"
+                name="population-range"
+              />
+            </div>
+          </div>
+
+          <div knob knob-inner percentages="100">
+            <span>Lifestyle Percentages</span>
+
+            <div>
+              <span>Wretched</span>
+
+              <div>
+                <input type="text" name="lifestyle-wretched" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-wretched-range"
+                />
+              </div>
+            </div>
+
+            <div>
+              <span>Squalid</span>
+
+              <div>
+                <input type="text" name="lifestyle-squalid" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-squalid-range"
+                />
+              </div>
+            </div>
+
+            <div>
+              <span>Poor</span>
+
+              <div>
+                <input type="text" name="lifestyle-poor" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-poor-range"
+                />
+              </div>
+            </div>
+
+            <div>
+              <span>Modest</span>
+
+              <div>
+                <input type="text" name="lifestyle-modest" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-modest-range"
+                />
+              </div>
+            </div>
+
+            <div>
+              <span>Comfortable</span>
+
+              <div>
+                <input type="text" name="lifestyle-comfortable" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-comfortable-range"
+                />
+              </div>
+            </div>
+
+            <div>
+              <span>Wealthy</span>
+
+              <div>
+                <input type="text" name="lifestyle-wealthy" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-wealthy-range"
+                />
+              </div>
+            </div>
+
+            <div>
+              <span>Aristocratic</span>
+
+              <div>
+                <input type="text" name="lifestyle-aristrocratic" value="0" />
+                <input
+                  type="range"
+                  min="0"
+                  value="0"
+                  max="100"
+                  name="lifestyle-aristrocratic-range"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col flex-grow justify-center items-center py-3 gap-8"
+        converter
+      >
+        <h1>D&D Economy Converter</h1>
+
+        <div class="flex flex-col gap-6" convert-form>
+          <div class="flex gap-2" convert-from>
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/platinum.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="platinum" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/gold.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="gold" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/electrum.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="electrum" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/silver.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="silver" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/copper.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="copper" placeholder="0" />
+            </div>
+          </div>
+
+          <div class="flex w-full justify-center">
+            <button convert>Convert</button>
+          </div>
+
+          <div class="flex gap-2" convert-to>
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/platinum.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="platinum" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/gold.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="gold" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/electrum.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="electrum" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/silver.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="silver" placeholder="0" />
+            </div>
+
+            <div class="flex flex-col relative">
+              <div class="absolute -top-2 -left-2">
+                <img src="./assets/img/copper.webp" alt="" srcset="" />
+              </div>
+              <input type="text" name="copper" placeholder="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "population": 1000,
+  "lifestyle": {
+    "wretched": 5,
+    "squalid": 15,
+    "poor": 25,
+    "modest": 25,
+    "comfortable": 20,
+    "wealthy": 9,
+    "aristrocratic": 1
+  }
+}
